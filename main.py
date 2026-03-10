@@ -6,7 +6,6 @@ from datetime import date
 st.sidebar.title("📓 My Digital Diary")
 page = st.sidebar.radio("Navigate", ["Home", "Write Diary", "Diary Insights", "About"])
 
-# ---------------- HOME PAGE ----------------
 if page == "Home":
     st.title("📔 Hello Boss! Welcome to Your Digital Diary")
 
@@ -33,7 +32,6 @@ if page == "Home":
 
     st.caption("*Your personal thoughts stay with you.*")
 
-# ---------------- WRITE DIARY PAGE ----------------
 elif page == "Write Diary":
 
     st.title("✍ Write a New Diary Entry")
@@ -63,7 +61,6 @@ elif page == "Write Diary":
 
     st.progress(50)
 
-# ---------------- DIARY INSIGHTS PAGE ----------------
 elif page == "Diary Insights":
 
     st.title("📊 Diary Insights")
@@ -88,7 +85,6 @@ elif page == "Diary Insights":
     with st.expander("View Sample Diary Data"):
         st.write(data)
 
-# ---------------- ABOUT PAGE ----------------
 elif page == "About":
 
     st.title("About This App")
@@ -126,5 +122,6 @@ elif page == "About":
         - Mood charts
         - Entry statistics
         """)
+
 
     st.info("This application was built using Streamlit.")
