@@ -124,4 +124,5 @@ elif page == "About":
         """)
 
 
-    st.info("This application was built using Streamlit.")
+    st.info("Contact: John Rafael P. Cutamora.")
+
